@@ -1,0 +1,21 @@
+.invoiceCard {
+    width: 100%;
+    max-width: 800px;
+    min-height: 845px;
+    height: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoiceTextInput {
+    border: 1px dashed transparent; /* Borde punteado y transparente por defecto */
+    transition: border-color 0.2s;
+}
+
+.invoiceTextInput:hover {
+    border-color: orange; /* Cambia el color del borde a naranja al pasar el cursor */
+}
+
+.invoiceTextInput:focus {
+    border-color: orange; /* Cambia el color del borde a naranja al hacer foco */
+    outline: none; /* Elimina el contorno predeterminado */
+}
