@@ -3,6 +3,7 @@
     max-width: 800px;
     height: auto;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px 48px;
 }
 
 /* Text Input Styles */
@@ -49,6 +50,17 @@
     color: var(--mantine-color-deepBlue-6);
     opacity: 1;
     font-size: .875rem;
+}
+
+.invoiceTable {
+    color: var(--mantine-color-deepBlue-9);
+    th {
+        font-style: italic;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--mantine-color-deepBlue-0);
+        background: var(--mantine-color-deepBlue-9);
+    }
 }
 
 /* Box error */
