@@ -52,8 +52,22 @@
     font-size: .875rem;
 }
 
+/* Number Input styles */
+.invoiceNumberInput {
+    border: 1px dashed transparent;
+    transition: border-color 0.2s;
+    padding: 1px;
+    color: var(--mantine-color-deepBlue-9);
+    opacity: 1;
+    font-size: .875rem;
+    text-align: center;
+}
+
+
+/* Table Styles */
 .invoiceTable {
     color: var(--mantine-color-deepBlue-9);
+
     th {
         font-style: italic;
         font-size: 1rem;
