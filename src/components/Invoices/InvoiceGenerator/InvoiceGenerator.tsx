@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import { DropZoneInvoice } from 'components/Invoices/InvoiceGenerator/DropzoneInvoice';
 import { TextInputInvoice } from 'components/Invoices/InvoiceGenerator/TextInputInvoice';
 import useInvoiceForm from 'forms/useInvoiceForm';
 import { Box, Button, Card, Group, Stack, Text, Title } from '@mantine/core';
+import { YourCompanyFields } from '@/src/components/Invoices/InvoiceGenerator/YourCompanyFields';
 import classes from './InvoiceGenerator.module.css';
 
 export function InvoiceGenerator() {
@@ -22,63 +22,13 @@ export function InvoiceGenerator() {
             <Title mt={'16'} mb={'16'}>
               Invoice
             </Title>
-            <Stack pb={'20'}>
-              <TextInputInvoice
-                required
-                placeholder={'Your Company*'}
-                isBold={true}
-                size={'26'}
-                error={null}
-                hasErrors={form.errors.companyName !== undefined}
-                {...form.getInputProps('companyName')}
-              />
-              <Group>
-                <TextInputInvoice
-                  required
-                  placeholder={'First Name*'}
-                  hasErrors={form.errors.firstName !== undefined}
-                  {...form.getInputProps('firstName')}
-                />
-                <TextInputInvoice
-                  required
-                  placeholder={'Last Name*'}
-                  hasErrors={form.errors.lastName !== undefined}
-                  {...form.getInputProps('lastName')}
-                />
-              </Group>
-              <TextInputInvoice
-                required
-                placeholder={'Company Website*'}
-                hasErrors={form.errors.companyWebsite !== undefined}
-                {...form.getInputProps('companyWebsite')}
-              />
-              <TextInputInvoice
-                placeholder={'Company Address'}
-                {...form.getInputProps('companyAddress')}
-              />
-              <TextInputInvoice
-                placeholder={'City, State ZIP'}
-                {...form.getInputProps('cityStateZIP')}
-              />
-              <TextInputInvoice placeholder={'Country'} {...form.getInputProps('country')} />
-              <TextInputInvoice
-                required
-                placeholder={'Phone No*'}
-                hasErrors={form.errors.phoneNumber !== undefined}
-                {...form.getInputProps('phoneNumber')}
-              />
-              <TextInputInvoice
-                required
-                placeholder={'Email Address*'}
-                hasErrors={form.errors.email !== undefined}
-                {...form.getInputProps('email')}
-              />
-            </Stack>
+
+            <YourCompanyFields form={form} />
 
             <Stack pb={'20'}>
               <TextInputInvoice
                 placeholder={'Clients Company'}
-                isBold={true}
+                isBold
                 size={'26'}
                 {...form.getInputProps('clientsCompany')}
               />

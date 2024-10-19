@@ -1,6 +1,7 @@
 import { useForm, UseFormReturnType } from '@mantine/form';
 
-interface InvoiceFormValues {
+//todo: create a file for interfaces
+export interface InvoiceFormValues {
   companyName: string;
   firstName: string;
   lastName: string;
