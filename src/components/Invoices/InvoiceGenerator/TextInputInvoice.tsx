@@ -6,20 +6,25 @@ interface TextInputInvoiceProps extends TextInputProps {
   placeholder?: string;
   size?: string;
   isTextRight?: boolean;
+  hasErrors?: boolean;
 }
 
 export function TextInputInvoice({
   isBold = false,
   placeholder = 'Input placeholder',
   size = '20',
-  isTextRight = false, 
+  isTextRight = false,
+  hasErrors = false,
   ...rest
 }: TextInputInvoiceProps) {
   return (
     <TextInput
       classNames={{
-        input: `${classes.invoiceTextInput} ${isBold ? classes.inputBold : ''}
-         ${isTextRight ? classes.inputTextRight : ''}`,
+        input: `${hasErrors ? classes.invoiceTextInputError : classes.invoiceTextInput} 
+        ${isBold ? classes.inputBold : ''}
+         ${isTextRight ? classes.inputTextRight : ''}
+         `,
+        error: classes.invoiceLabelError,
       }}
       variant="unstyled"
       placeholder={placeholder}

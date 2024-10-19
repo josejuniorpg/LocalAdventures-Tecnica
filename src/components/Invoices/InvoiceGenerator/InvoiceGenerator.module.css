@@ -39,6 +39,18 @@
     text-align: right;
 }
 
+.invoiceLabelError {
+    display: none;
+}
+
+.invoiceTextInputError {
+    border: 1px dashed transparent;
+    transition: border-color 0.2s;
+    padding: 1px;
+    color: var(--mantine-color-deepBlue-6);
+    opacity: 1;
+    font-size: .875rem;
+}
 
 /* Box error */
 .boxError {
