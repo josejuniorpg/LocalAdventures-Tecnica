@@ -1,25 +1,10 @@
-'use client';
-
-import { useRef, useState } from 'react';
+'use client'
+import { DropZoneInvoice } from '@/src/components/Invoices/InvoiceGenerator/DropzoneInvoice';
 import { TextInputInvoice } from 'components/Invoices/InvoiceGenerator/TextInputInvoice';
-import { Button, Card, Group, Image, Stack, Text, Title } from '@mantine/core';
-import { Dropzone, FileWithPath, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { Button, Card, Group, Stack, Text, Title } from '@mantine/core';
 import classes from './InvoiceGenerator.module.css';
 
 export function InvoiceGenerator() {
-  const [file, setFile] = useState<FileWithPath | null>(null);
-  const openRef = useRef<() => void>(null); // This is necessary for open dropZone.
-
-  const handleDrop = (acceptedFiles: FileWithPath[]) => {
-    setFile(acceptedFiles[0]); // Accepts only the first file.
-  };
-
-  const handleRemove = () => {
-    setFile(null); //todo: create a delete buton.
-  };
-
-  const imageUrl = file ? URL.createObjectURL(file) : '';
-
   return (
     <Card padding="24" withBorder className={classes.invoiceCard}>
       <Stack gap={0}>
@@ -57,54 +42,9 @@ export function InvoiceGenerator() {
 
           <Stack justify="space-between">
             {/* todo: Add the image selector*/}
-            <>
-              <Dropzone
-                accept={IMAGE_MIME_TYPE}
-                onDrop={handleDrop}
-                openRef={openRef}
-                style={{
-                  position: 'relative',
-                  width: '208px',
-                  height: '117px',
-                  border: file ? 'none' : '2px dashed #ccc', // Delete border if there is file.
-                }}
-              >
-                {file ? (
-                  <div
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                    }}
-                  >
-                    <Image
-                      src={imageUrl}
-                      onLoad={() => URL.revokeObjectURL(imageUrl)} // Revocar la URL después de cargar
-                      alt={`Preview of ${file.name}`}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                      }}
-                    />
-                  </div>
-                ) : (
-                  <Text
-                    align="center"
-                    style={{
-                      height: '100%',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    Drop an image here or click to select
-                  </Text>
-                )}
-              </Dropzone>
-            </>
+
+            <DropZoneInvoice />
+
             <Stack>
               <Group>
                 <Text>dssasadsad</Text>
