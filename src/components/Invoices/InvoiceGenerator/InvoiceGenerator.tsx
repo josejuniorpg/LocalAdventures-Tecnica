@@ -1,15 +1,21 @@
-'use client'
-import { DropZoneInvoice } from '@/src/components/Invoices/InvoiceGenerator/DropzoneInvoice';
+'use client';
+
 import { TextInputInvoice } from 'components/Invoices/InvoiceGenerator/TextInputInvoice';
-import { Button, Card, Group, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Card, Group, Stack, Text, Title } from '@mantine/core';
+import { DropZoneInvoice } from 'components/Invoices/InvoiceGenerator/DropzoneInvoice';
 import classes from './InvoiceGenerator.module.css';
 
 export function InvoiceGenerator() {
   return (
     <Card padding="24" withBorder className={classes.invoiceCard}>
       <Stack gap={0}>
-        <Group justify="space-between">
-          <Stack gap={0}>
+        <Group align="stretch" justify="space-between" w={'100%'}>
+          <Stack
+            gap={0}
+            style={{
+              flexGrow: 1,
+            }}
+          >
             <Title mt={'16'} mb={'16'}>
               Invoice
             </Title>
@@ -40,10 +46,23 @@ export function InvoiceGenerator() {
             </Stack>
           </Stack>
 
-          <Stack justify="space-between">
-            {/* todo: Add the image selector*/}
-
+          <Stack
+            align={'flex-end'}
+            justify="space-between"
+            style={{
+              flexGrow: 1,
+            }}
+          >
             <DropZoneInvoice />
+
+            {/*todo put the mapper for error list*/}
+            <Box className={classes.boxError}>
+              <ul className={classes.listError}>
+                <li>Erro1</li>
+                <li>Erro1</li>
+                <li>Erro1</li>
+              </ul>
+            </Box>
 
             <Stack>
               <Group>

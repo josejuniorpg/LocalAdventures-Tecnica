@@ -6,31 +6,50 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*Text Input Styles*/
+/* Text Input Styles */
 .invoiceTextInput {
     border: 1px dashed transparent;
     transition: border-color 0.2s;
     padding: 1px;
-    color: rgb(33, 51, 67);
+    color: var(--mantine-color-deepBlue-9);
     opacity: 1;
     font-size: .875rem;
 }
 
 .invoiceTextInput:hover {
-    border-color: rgb(255, 122, 89);
+    border-color: var(--mantine-color-mainOrange-4);
 }
 
 .invoiceTextInput:focus {
-    border-color: rgb(255, 122, 89);
+    border-color: var(--mantine-color-mainOrange-4);
     outline: none;
 }
 
 .invoiceTextInput::placeholder {
-    color: rgb(33, 51, 67);
+    color: var(--mantine-color-deepBlue-9);
     opacity: 0.7;
 }
 
 .inputBold {
     font-weight: bold;
     font-size: 1.2rem
+}
+
+
+/* Box error */
+.boxError {
+    background-color: var(--mantine-color-mainRed-1);
+    list-style: none;
+    border: 1px solid var(--mantine-color-mainRed-6);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.listError {
+    list-style: none;
+    padding: 10px;
+    color: var(--mantine-color-mainRed-6);
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 0;
 }
