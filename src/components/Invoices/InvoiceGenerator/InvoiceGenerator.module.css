@@ -35,6 +35,10 @@
     font-size: 1.2rem
 }
 
+.inputTextRight {
+    text-align: right;
+}
+
 
 /* Box error */
 .boxError {
