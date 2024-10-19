@@ -6,6 +6,7 @@ import { TextInputInvoice } from 'components/Invoices/InvoiceGenerator/TextInput
 import { YourCompanyFields } from 'components/Invoices/InvoiceGenerator/YourCompanyFields';
 import useInvoiceForm from 'forms/useInvoiceForm';
 import { Box, Button, Card, Group, Stack, Text, Title } from '@mantine/core';
+import { InvoiceDateFields } from '@/src/components/Invoices/InvoiceGenerator/InvoiceDateFields';
 import classes from './InvoiceGenerator.module.css';
 
 export function InvoiceGenerator() {
@@ -38,48 +39,7 @@ export function InvoiceGenerator() {
                 </ul>
               </Box>
             )}
-            <Stack align="flex-end" gap={0}>
-              <Group>
-                <Text fw={500} fz={16} c="deepBlue.9">
-                  Invoice No:
-                </Text>
-                <TextInputInvoice
-                  w={105}
-                  isTextRight
-                  size="28"
-                  placeholder="###"
-                  isBold
-                  {...form.getInputProps('invoiceNo')}
-                />
-              </Group>
-              <Group>
-                <Text fw={500} fz={16} c="deepBlue.9">
-                  Invoice Date:
-                </Text>
-                <TextInputInvoice
-                  w={105}
-                  isTextRight
-                  size="28"
-                  placeholder="10/8/2024"
-                  isBold
-                  {...form.getInputProps('invoiceDate')}
-                />
-              </Group>
-              <Group>
-                <Text fw={500} fz={16} c="deepBlue.9">
-                  Due Date:
-                </Text>
-                <TextInputInvoice
-                  w={105}
-                  isTextRight
-                  size="28"
-                  placeholder="10/8/2024"
-                  isBold
-                  error=""
-                  {...form.getInputProps('dueDate')}
-                />
-              </Group>
-            </Stack>
+            <InvoiceDateFields form={form} />
           </Stack>
         </Group>
 
