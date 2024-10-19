@@ -6,16 +6,31 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+/*Text Input Styles*/
 .invoiceTextInput {
-    border: 1px dashed transparent; /* Borde punteado y transparente por defecto */
+    border: 1px dashed transparent;
     transition: border-color 0.2s;
+    padding: 1px;
+    color: rgb(33, 51, 67);
+    opacity: 1;
+    font-size: .875rem;
 }
 
 .invoiceTextInput:hover {
-    border-color: orange; /* Cambia el color del borde a naranja al pasar el cursor */
+    border-color: rgb(255, 122, 89);
 }
 
 .invoiceTextInput:focus {
-    border-color: orange; /* Cambia el color del borde a naranja al hacer foco */
-    outline: none; /* Elimina el contorno predeterminado */
+    border-color: rgb(255, 122, 89);
+    outline: none;
+}
+
+.invoiceTextInput::placeholder {
+    color: rgb(33, 51, 67);
+    opacity: 0.7;
+}
+
+.inputBold {
+    font-weight: bold;
+    font-size: 1.2rem
 }
