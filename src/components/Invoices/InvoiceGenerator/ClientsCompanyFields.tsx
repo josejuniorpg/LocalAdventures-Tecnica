@@ -2,10 +2,11 @@ import { InvoiceFormValues } from 'forms/useInvoiceForm';
 import { Group, Stack } from '@mantine/core';
 import { UseFormReturnType } from '@mantine/form';
 import { TextInputInvoice } from '@/src/components/Invoices/InvoiceGenerator/TextInputInvoice';
+import classes from './InvoiceGenerator.module.css';
 
 export function ClientsCompanyFields({ form }: { form: UseFormReturnType<InvoiceFormValues> }) {
   return (
-    <Stack pb="20">
+    <Stack pb="20" className={classes.gapZero}>
       <TextInputInvoice
         placeholder="Clients Company"
         isBold
