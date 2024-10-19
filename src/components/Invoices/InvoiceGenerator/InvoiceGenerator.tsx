@@ -97,14 +97,13 @@ export function InvoiceGenerator() {
           </Stack>
         </Group>
 
-        <Box pt="3rem" pb="3rem">
+        <Box pt="3rem" pb="3rem" className={classes.invoiceTableWrapper}>
           <Table
             striped
             stripedColor="deepBlue.0"
             borderColor="deepBlue.9"
             withRowBorders
             verticalSpacing="12"
-            p="5"
             className={classes.invoiceTable}
           >
             <Table.Thead>
@@ -112,32 +111,22 @@ export function InvoiceGenerator() {
                 style={{
                   display: 'flex',
                   justifyContent: 'space-between',
+                  height: '60px',
                 }}
               >
                 <Table.Th style={{ flex: 1 }}>ID</Table.Th>
                 <Table.Th style={{ flex: 3 }}>Description</Table.Th>
                 <Table.Th style={{ flex: 1 }}>Quantity</Table.Th>
-                <Table.Th ta="center" style={{ flex: 1 }}>
-                  Price
-                </Table.Th>
+                <Table.Th style={{ flex: 1 }}>Price</Table.Th>
               </Table.Tr>
             </Table.Thead>
             <Table.Tbody>{rows}</Table.Tbody>
           </Table>
-        </Box>
 
-        <Button
-          color="blue"
-          fullWidth
-          mt="md"
-          radius="md"
-          onClick={(event) => {
-            event.preventDefault();
-            form.onSubmit(handleSubmit)();
-          }}
-        >
-          Book classic tour now
-        </Button>
+          <Box className={classes.addMoreButtonWrapper}>
+            <Button fw={700}  className={classes.addMoreHiddenButton}>+ Add More</Button>
+          </Box>
+        </Box>
       </Stack>
     </Card>
   );
