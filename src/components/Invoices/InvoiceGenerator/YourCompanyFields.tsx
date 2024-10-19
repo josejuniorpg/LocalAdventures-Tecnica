@@ -4,11 +4,7 @@ import { Group, Stack } from '@mantine/core';
 import { UseFormReturnType } from '@mantine/form';
 import { TextInputInvoice } from './TextInputInvoice';
 
-interface YourCompanyProps {
-  form: UseFormReturnType<InvoiceFormValues>;
-}
-
-export function YourCompanyFields({ form }: YourCompanyProps) {
+export function YourCompanyFields({ form }: { form: UseFormReturnType<InvoiceFormValues> }) {
   return (
     <Stack pb="20">
       <TextInputInvoice

@@ -1,10 +1,11 @@
 'use client';
 
+import { ClientsCompanyFields } from 'components/Invoices/InvoiceGenerator/ClientsCompanyFields';
 import { DropZoneInvoice } from 'components/Invoices/InvoiceGenerator/DropzoneInvoice';
 import { TextInputInvoice } from 'components/Invoices/InvoiceGenerator/TextInputInvoice';
+import { YourCompanyFields } from 'components/Invoices/InvoiceGenerator/YourCompanyFields';
 import useInvoiceForm from 'forms/useInvoiceForm';
 import { Box, Button, Card, Group, Stack, Text, Title } from '@mantine/core';
-import { YourCompanyFields } from '@/src/components/Invoices/InvoiceGenerator/YourCompanyFields';
 import classes from './InvoiceGenerator.module.css';
 
 export function InvoiceGenerator() {
@@ -22,43 +23,8 @@ export function InvoiceGenerator() {
             <Title mt="16" mb="16">
               Invoice
             </Title>
-
             <YourCompanyFields form={form} />
-
-            <Stack pb="20">
-              <TextInputInvoice
-                placeholder="Clients Company"
-                isBold
-                size="26"
-                {...form.getInputProps('clientsCompany')}
-              />
-              <Group>
-                <TextInputInvoice
-                  placeholder="First Name"
-                  {...form.getInputProps('clientsFirstName')}
-                />
-                <TextInputInvoice
-                  placeholder="Last Name"
-                  {...form.getInputProps('clientsLastName')}
-                />
-              </Group>
-              <TextInputInvoice
-                placeholder="Clients Address"
-                {...form.getInputProps('clientsAddress')}
-              />
-              <TextInputInvoice
-                placeholder="Clients City, State ZIP"
-                {...form.getInputProps('clientsCityStateZIP')}
-              />
-              <TextInputInvoice
-                placeholder="Clients Country"
-                {...form.getInputProps('clientsCountry')}
-              />
-              <TextInputInvoice
-                placeholder="Clients Email"
-                {...form.getInputProps('clientsEmail')}
-              />
-            </Stack>
+            <ClientsCompanyFields form={form} />
           </Stack>
 
           <Stack align="flex-end" justify="space-between" style={{ flexGrow: 1 }}>
