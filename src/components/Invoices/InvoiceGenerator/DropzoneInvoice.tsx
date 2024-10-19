@@ -52,13 +52,13 @@ export function DropZoneInvoice() {
             src={imageUrl}
             onLoad={() => URL.revokeObjectURL(imageUrl)}
             alt={`Preview of ${file.name}`}
-            width={'100%'}
-            height={'100%'}
-            fit={'cover'}
+            width="100%"
+            height="100%"
+            fit="cover"
           />
         </div>
       ) : (
-        <Text ta={'center'} size={'lg'} fw={600}>
+        <Text ta="center" size="lg" fw={600}>
           Drag & drop a logo file or click to upload
         </Text>
       )}

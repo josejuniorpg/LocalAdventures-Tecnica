@@ -17,51 +17,51 @@ export function InvoiceGenerator() {
   return (
     <Card padding="24" withBorder className={classes.invoiceCard}>
       <Stack gap={0}>
-        <Group align="stretch" justify="space-between" w={'100%'}>
+        <Group align="stretch" justify="space-between" w="100%">
           <Stack gap={0} style={{ flexGrow: 1 }}>
-            <Title mt={'16'} mb={'16'}>
+            <Title mt="16" mb="16">
               Invoice
             </Title>
 
             <YourCompanyFields form={form} />
 
-            <Stack pb={'20'}>
+            <Stack pb="20">
               <TextInputInvoice
-                placeholder={'Clients Company'}
+                placeholder="Clients Company"
                 isBold
-                size={'26'}
+                size="26"
                 {...form.getInputProps('clientsCompany')}
               />
               <Group>
                 <TextInputInvoice
-                  placeholder={'First Name'}
+                  placeholder="First Name"
                   {...form.getInputProps('clientsFirstName')}
                 />
                 <TextInputInvoice
-                  placeholder={'Last Name'}
+                  placeholder="Last Name"
                   {...form.getInputProps('clientsLastName')}
                 />
               </Group>
               <TextInputInvoice
-                placeholder={'Clients Address'}
+                placeholder="Clients Address"
                 {...form.getInputProps('clientsAddress')}
               />
               <TextInputInvoice
-                placeholder={'Clients City, State ZIP'}
+                placeholder="Clients City, State ZIP"
                 {...form.getInputProps('clientsCityStateZIP')}
               />
               <TextInputInvoice
-                placeholder={'Clients Country'}
+                placeholder="Clients Country"
                 {...form.getInputProps('clientsCountry')}
               />
               <TextInputInvoice
-                placeholder={'Clients Email'}
+                placeholder="Clients Email"
                 {...form.getInputProps('clientsEmail')}
               />
             </Stack>
           </Stack>
 
-          <Stack align={'flex-end'} justify="space-between" style={{ flexGrow: 1 }}>
+          <Stack align="flex-end" justify="space-between" style={{ flexGrow: 1 }}>
             <DropZoneInvoice />
             {Object.keys(form.errors).length > 0 && (
               <Box className={classes.boxError}>
@@ -72,44 +72,44 @@ export function InvoiceGenerator() {
                 </ul>
               </Box>
             )}
-            <Stack align={'flex-end'} gap={0}>
+            <Stack align="flex-end" gap={0}>
               <Group>
-                <Text fw={500} fz={16} c={'deepBlue.9'}>
+                <Text fw={500} fz={16} c="deepBlue.9">
                   Invoice No:
                 </Text>
                 <TextInputInvoice
                   w={105}
                   isTextRight
                   size="28"
-                  placeholder={'###'}
+                  placeholder="###"
                   isBold
                   {...form.getInputProps('invoiceNo')}
                 />
               </Group>
               <Group>
-                <Text fw={500} fz={16} c={'deepBlue.9'}>
+                <Text fw={500} fz={16} c="deepBlue.9">
                   Invoice Date:
                 </Text>
                 <TextInputInvoice
                   w={105}
                   isTextRight
                   size="28"
-                  placeholder={'10/8/2024'}
+                  placeholder="10/8/2024"
                   isBold
                   {...form.getInputProps('invoiceDate')}
                 />
               </Group>
               <Group>
-                <Text fw={500} fz={16} c={'deepBlue.9'}>
+                <Text fw={500} fz={16} c="deepBlue.9">
                   Due Date:
                 </Text>
                 <TextInputInvoice
                   w={105}
                   isTextRight
                   size="28"
-                  placeholder={'10/8/2024'}
+                  placeholder="10/8/2024"
                   isBold
-                  error={''}
+                  error=""
                   {...form.getInputProps('dueDate')}
                 />
               </Group>

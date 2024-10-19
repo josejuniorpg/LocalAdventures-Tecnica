@@ -10,47 +10,47 @@ interface YourCompanyProps {
 
 export function YourCompanyFields({ form }: YourCompanyProps) {
   return (
-    <Stack pb={'20'}>
+    <Stack pb="20">
       <TextInputInvoice
         required
-        placeholder={'Your Company*'}
-        isBold={true}
-        size={'26'}
+        placeholder="Your Company*"
+        isBold
+        size="26"
         hasErrors={form.errors.companyName !== undefined}
         {...form.getInputProps('companyName')}
       />
       <Group>
         <TextInputInvoice
           required
-          placeholder={'First Name*'}
+          placeholder="First Name*"
           hasErrors={form.errors.firstName !== undefined}
           {...form.getInputProps('firstName')}
         />
         <TextInputInvoice
           required
-          placeholder={'Last Name*'}
+          placeholder="Last Name*"
           hasErrors={form.errors.lastName !== undefined}
           {...form.getInputProps('lastName')}
         />
       </Group>
       <TextInputInvoice
         required
-        placeholder={'Company Website*'}
+        placeholder="Company Website*"
         hasErrors={form.errors.companyWebsite !== undefined}
         {...form.getInputProps('companyWebsite')}
       />
-      <TextInputInvoice placeholder={'Company Address'} {...form.getInputProps('companyAddress')} />
-      <TextInputInvoice placeholder={'City, State ZIP'} {...form.getInputProps('cityStateZIP')} />
-      <TextInputInvoice placeholder={'Country'} {...form.getInputProps('country')} />
+      <TextInputInvoice placeholder="Company Address" {...form.getInputProps('companyAddress')} />
+      <TextInputInvoice placeholder="City, State ZIP" {...form.getInputProps('cityStateZIP')} />
+      <TextInputInvoice placeholder="Country" {...form.getInputProps('country')} />
       <TextInputInvoice
         required
-        placeholder={'Phone No*'}
+        placeholder="Phone No*"
         hasErrors={form.errors.phoneNumber !== undefined}
         {...form.getInputProps('phoneNumber')}
       />
       <TextInputInvoice
         required
-        placeholder={'Email Address*'}
+        placeholder="Email Address*"
         hasErrors={form.errors.email !== undefined}
         {...form.getInputProps('email')}
       />
