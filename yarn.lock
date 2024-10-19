@@ -2920,7 +2920,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^3.6.0":
+"@tabler/icons-react@npm:^3.19.0":
   version: 3.19.0
   resolution: "@tabler/icons-react@npm:3.19.0"
   dependencies:
@@ -9205,7 +9205,7 @@ __metadata:
     "@next/eslint-plugin-next": "npm:^14.2.4"
     "@storybook/nextjs": "npm:^8.1.10"
     "@storybook/react": "npm:^8.1.10"
-    "@tabler/icons-react": "npm:^3.6.0"
+    "@tabler/icons-react": "npm:^3.19.0"
     "@testing-library/dom": "npm:^10.1.0"
     "@testing-library/jest-dom": "npm:^6.4.6"
     "@testing-library/react": "npm:^16.0.0"
