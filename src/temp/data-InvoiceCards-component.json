@@ -1,0 +1,24 @@
+{
+  "invoiceCards": [
+    {
+      "imageSrc": "InvoicesImages/InvoiceChart.webp",
+      "title": "Invoices",
+      "description": "Create, send, and monitor professional invoices within the HubSpot invoice integration. Consolidate invoicing, payments, and quoting in one place."
+    },
+    {
+      "imageSrc": "InvoicesImages/PaymentsChart.webp",
+      "title": "Payments",
+      "description": "Expedite payments by easily generating and distributing payment links. Share links across customer touchpoints like emails, websites, forms, and meetings."
+    },
+    {
+      "imageSrc": "InvoicesImages/QuotesChart.webp",
+      "title": "Quotes",
+      "description": "Generate branded sales quotes, collect payments and electronic signatures within quotes, and automatically populate quotes with information from HubSpot’s Smart CRM."
+    },
+    {
+      "imageSrc": "InvoicesImages/RevenueChart.webp",
+      "title": "Revenue Reporting",
+      "description": "Analyze total gross revenue, top products, and top-performing sales reps with comprehensive revenue reporting. Customize your reports for additional insights."
+    }
+  ]
+}

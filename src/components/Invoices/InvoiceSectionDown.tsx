@@ -1,42 +1,11 @@
 'use client';
 
-import { IconChevronRight } from '@tabler/icons-react';
-import { Accordion, Box, Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Flex, Group, Image, Stack, Text } from '@mantine/core';
+import { FAQSection } from '@/src/components/Invoices/FAQSection';
 import { InvoiceCards } from '@/src/components/Invoices/InvoiceCards';
 import classes from './InvoiceSecction.module.css';
 
 export function InvoiceSectionDown() {
-  const groceries = [
-    {
-      value: 'Apples',
-      description:
-        'Crisp and refreshing fruit. Apples are known for their versatility and nutritional benefits. They come in a variety of flavors and are great for snacking, baking, or adding to salads.',
-    },
-    {
-      value: 'Bananas',
-      description:
-        'Naturally sweet and potassium-rich fruit. Bananas are a popular choice for their energy-boosting properties and can be enjoyed as a quick snack, added to smoothies, or used in baking.',
-    },
-    {
-      value: 'Broccoli',
-      description:
-        'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
-    },
-  ];
-
-  const items = groceries.map((item) => (
-    <Accordion.Item key={item.value} value={item.value}>
-      <Accordion.Control>
-        <Text size="xl" fw={700}>
-          {item.value}
-        </Text>
-      </Accordion.Control>
-      <Accordion.Panel>
-        <Text fz="17">{item.description}</Text>
-      </Accordion.Panel>
-    </Accordion.Item>
-  ));
-
   return (
     <>
       <Box bg="deepBlue.10" w="100%">
@@ -110,31 +79,12 @@ export function InvoiceSectionDown() {
         </Flex>
       </Box>
       <InvoiceCards />
-      <Flex bg="deepBlue.10" w="100%" justify="center" align="center" p={24}>
+      <Flex bg="deepBlue.10" w="100%" justify="center" align="center" p={44}>
         <Button c="black" fw={500} radius="md" size="xl" color="deepBlue.0">
           Create my invoice
         </Button>
       </Flex>
-      <Box w="100%" maw="1080">
-        <Title ta="center" className={classes.title}>
-          Invoice Generator FAQ
-        </Title>
-        <Accordion
-          variant="separated"
-          radius="md"
-          w="100%"
-          chevronPosition="left"
-          defaultValue="Apples"
-          chevron={<IconChevronRight />}
-          classNames={{
-            control: `${classes.invoiceQAccordionTitle} ${classes.invoiceQAccordion}`,
-            content: classes.invoiceQAccordionOpened,
-            chevron: classes.invoiceQAccordionChevron,
-          }}
-        >
-          {items}
-        </Accordion>
-      </Box>
+      <FAQSection />
     </>
   );
 }
