@@ -1,0 +1,51 @@
+.cubeContainer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.bigCube {
+    width: 90%;
+    height: 90%;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.smallCube {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.yellowCube {
+    background-color: #f1c40f;
+}
+
+.orangeCube {
+    background-color: #e67e22;
+}
+
+.redCube {
+    background-color: #e74c3c;
+}
+
+.darkOrangeCube {
+    background-color: #d35400;
+}
+
+.plusSign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
