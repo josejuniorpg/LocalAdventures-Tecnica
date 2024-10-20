@@ -1,15 +1,16 @@
-import { InvoicesSectionHeader } from '@/src/components/Invoices/InvoicesSectionHeader';
-import { InvoiceGenerator } from '@/src/components/Invoices/InvoiceGenerator/InvoiceGenerator';
-import {Stack} from "@mantine/core";
+import { InvoiceGenerator } from 'components/Invoices/InvoiceGenerator/InvoiceGenerator';
+import { InvoicesSectionHeader } from 'components/Invoices/InvoicesSectionHeader';
+import { Stack } from '@mantine/core';
+import { InvoiceSectionDown } from '@/src/components/Invoices/InvoiceSectionDown';
 
 export default function HomePage() {
   return (
     <>
-        <Stack align={'center'}>
-            <InvoicesSectionHeader />
-            <InvoiceGenerator />
-        </Stack>
-
+      <Stack align="center">
+        <InvoicesSectionHeader />
+        <InvoiceGenerator />
+        <InvoiceSectionDown />
+      </Stack>
     </>
   );
 }
