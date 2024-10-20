@@ -3,7 +3,7 @@
 import { Box, Button, Flex, Group, Image, Stack, Text } from '@mantine/core';
 import { FAQSection } from '@/src/components/Invoices/FAQSection';
 import { InvoiceCards } from '@/src/components/Invoices/InvoiceCards';
-import classes from './InvoiceSecction.module.css';
+import classes from './InvoiceSection.module.css';
 
 export function InvoiceSectionDown() {
   return (

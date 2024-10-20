@@ -1,0 +1,30 @@
+/* Accordion Styles */
+.invoiceQAccordion {
+    background: white;
+    border: 0.5px solid var(--mantine-color-deepBlue-1);
+    border-radius: 8px;
+    padding: 3px;
+    transition: border-color 0.3s ease;
+}
+
+.invoiceQAccordionTitle {
+    transition: color 0.3s ease;
+}
+
+.invoiceQAccordionTitle:hover {
+    color: #215aef;
+}
+
+.invoiceQAccordionChevron {
+    transition: transform 0.3s ease;
+}
+
+.invoiceQAccordion[data-active="true"] .invoiceQAccordionChevron {
+    transform: rotate(90deg);
+}
+
+
+.invoiceQAccordion[data-active="true"] {
+    border-bottom: none;
+}
+
