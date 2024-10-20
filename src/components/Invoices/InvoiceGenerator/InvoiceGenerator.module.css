@@ -63,6 +63,20 @@
     text-align: center;
 }
 
+.invoiceNumberInput:hover {
+    border-color: var(--mantine-color-mainOrange-4);
+}
+
+.invoiceNumberInput:focus {
+    border-color: var(--mantine-color-mainOrange-4);
+    outline: none;
+}
+
+.invoiceNumberInput::placeholder {
+    color: var(--mantine-color-deepBlue-9);
+    opacity: 0.7;
+}
+
 
 /* Table Styles */
 .invoiceTable {
@@ -94,7 +108,7 @@
 .addMoreHiddenButton {
     width: 100%;
     height: 45px;
-    background-color: var(--mantine-color-mainOrange-6);
+    background: var(--mantine-color-mainOrange-4);
     color: white;
     font-size: 16px;
     border: none;
@@ -109,7 +123,34 @@
 
 .invoiceTableWrapper:hover .addMoreHiddenButton {
     opacity: 1;
-    background-color: var(--mantine-color-mainOrange-5);
+    background-color: var(--mantine-color-mainOrange-4);
+}
+
+
+.rowHoverButtonWrapper {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease;
+}
+
+.rowHoverButton {
+    height: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.tableTr:hover .rowHoverButtonWrapper {
+    max-width: 100px;
+}
+
+.tableTr:hover .rowHoverButton {
+    opacity: 1;
 }
 
 /* Box error */
