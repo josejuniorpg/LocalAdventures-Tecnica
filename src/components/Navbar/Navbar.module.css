@@ -1,0 +1,92 @@
+.header {
+    padding: 1rem var(--mantine-spacing-md) 0;
+    background: white;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+}
+
+.navbarTop {
+    background: white;
+    z-index: 10;
+    height: 52px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbarTopContainer {
+    background: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.navbarBottom {
+    background: white;
+    z-index: 10;
+    height: 76px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbarBottomContainer {
+    background: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    font-weight: 500;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        height: rem(42px);
+        width: 100%;
+    }
+
+    @mixin hover {
+        color: #005fa3;
+    }
+}
+
+.secondaryLink {
+    font-size: 12px;
+}
+
+.subLink {
+    width: 100%;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-md);
+
+    @mixin hover {
+        background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+    }
+}
+
+.dropdownFooter {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+    margin: calc(var(--mantine-spacing-md) * -1);
+    margin-top: var(--mantine-spacing-sm);
+    padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
+    padding-bottom: var(--mantine-spacing-xl);
+    border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
