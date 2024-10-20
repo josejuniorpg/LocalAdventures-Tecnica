@@ -3,7 +3,7 @@ import { TwoCubes } from '@/src/components/utils/TwoCubesC/TwoCubes';
 import classes from './InvoiceSecction.module.css';
 
 export const InvoicesSection = () => (
-  <Box h={384} w="100%" bg="deepBlue.9" mb={96} pl={40} pr={40}>
+  <Box h={384} w="100%" bg="deepBlue.10" mb={96} pl={80} pr={80}>
     <Group h="100%" align="flex-start">
       <TwoCubes />
       <Stack w="100%" maw={1080} align="center" gap={10} h="100%" justify="center">
