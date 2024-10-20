@@ -17,26 +17,7 @@ interface Row {
 export function TableInvoice() {
   const [numberRow, setNumberRow] = useState('00');
   const [hoveredRowIndex, setHoveredRowIndex] = useState<number | null>(null);
-  const [rows, setRows] = useState<Row[]>([
-    {
-      id: 1,
-      description: '',
-      quantity: 0,
-      price: 0.0,
-    },
-    {
-      id: 2,
-      description: '',
-      quantity: 0,
-      price: 0.0,
-    },
-    {
-      id: 3,
-      description: '',
-      quantity: 0,
-      price: 0.0,
-    },
-  ]);
+  const [rows, setRows] = useState<Row[]>([]);
 
   const handleAddClick = () => {
     const newRow = [Number(numberRow), '', 1, 0.0];

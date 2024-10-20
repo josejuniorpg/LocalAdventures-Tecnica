@@ -159,7 +159,6 @@
     list-style: none;
     border: 1px solid var(--mantine-color-mainRed-6);
     border-radius: 8px;
-    width: 100%;
 }
 
 .gapZero {

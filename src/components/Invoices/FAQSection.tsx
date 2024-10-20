@@ -5,7 +5,7 @@ import classes from './InvoiceSecction.module.css';
 
 export function FAQSection() {
   return (
-    <Box w="100%" maw="1080">
+    <Box w="100%" maw="1080" mb={20}>
       <Title ta="center" className={classes.title} mb={30}>
         Invoice Generator FAQ
       </Title>
@@ -163,7 +163,7 @@ export function FAQSection() {
           </Accordion.Panel>
         </Accordion.Item>
       </Accordion>
-      <Text pt={20} c="deepBlue.9" fz={13}>
+      <Text pt={20} c="deepBlue.9" fz={13} mt={50}>
         Disclaimer: These FAQs include some information on legal issues surrounding invoicing, but
         legal information is not the same as legal advice -- applying the law to a specific
         circumstance. We’ve conducted research to better ensure that our information is accurate and
