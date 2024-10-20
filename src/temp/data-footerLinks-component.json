@@ -1,0 +1,222 @@
+{
+  "footerLinks": [
+    {
+      "title": "Popular Features",
+      "links": [
+        {
+          "label": "All Products and Features",
+          "href": "/all-products"
+        },
+        {
+          "label": "Free Meeting Scheduler App",
+          "href": "/free-scheduler"
+        },
+        {
+          "label": "Breeze AI Tools",
+          "href": "/breeze-ai-tools"
+        },
+        {
+          "label": "Email Tracking Software",
+          "href": "/email-tracking"
+        },
+        {
+          "label": "AI Content Writer",
+          "href": "/ai-content-writer"
+        },
+        {
+          "label": "AI Website Generator",
+          "href": "/ai-website-generator"
+        },
+        {
+          "label": "Email Marketing Software",
+          "href": "/email-marketing"
+        },
+        {
+          "label": "Lead Management Software",
+          "href": "/lead-management"
+        },
+        {
+          "label": "AI Email Writer",
+          "href": "/ai-email-writer"
+        }
+      ]
+    },
+    {
+      "title": "Additional Tools",
+      "links": [
+        {
+          "label": "Free Website Builder",
+          "href": "/free-website-builder"
+        },
+        {
+          "label": "Sales Email Templates",
+          "href": "/sales-email-templates"
+        },
+        {
+          "label": "Free Online Form Builder",
+          "href": "/free-online-form-builder"
+        },
+        {
+          "label": "Free Chatbot Builder",
+          "href": "/free-chatbot-builder"
+        },
+        {
+          "label": "Free Live Chat Software",
+          "href": "/free-live-chat-software"
+        },
+        {
+          "label": "Marketing Analytics",
+          "href": "/marketing-analytics"
+        },
+        {
+          "label": "Free Landing Page Builder",
+          "href": "/free-landing-page-builder"
+        },
+        {
+          "label": "Free Web Hosting",
+          "href": "/free-web-hosting"
+        }
+      ]
+    },
+    {
+      "title": "freeTools",
+      "links": [
+        {
+          "label": "See All Free Business Tools",
+          "href": "/all-free-tools"
+        },
+        {
+          "label": "AI Search Grader",
+          "href": "/ai-search-grader"
+        },
+        {
+          "label": "Clip Creator",
+          "href": "/clip-creator"
+        },
+        {
+          "label": "Website Grader",
+          "href": "/website-grader"
+        },
+        {
+          "label": "Make My Persona",
+          "href": "/make-my-persona"
+        },
+        {
+          "label": "Email Signature Generator",
+          "href": "/email-signature-generator"
+        },
+        {
+          "label": "Brand Kit Generator",
+          "href": "/brand-kit-generator"
+        },
+        {
+          "label": "Blog Ideas Generator",
+          "href": "/blog-ideas-generator"
+        },
+        {
+          "label": "Invoice Generator",
+          "href": "/invoice-generator"
+        },
+        {
+          "label": "Free Business Templates",
+          "href": "/free-business-templates"
+        },
+        {
+          "label": "Guide Creator",
+          "href": "/guide-creator"
+        },
+        {
+          "label": "Software Comparisons Library",
+          "href": "/software-comparisons"
+        },
+        {
+          "label": "Template Marketplace",
+          "href": "/template-marketplace"
+        },
+        {
+          "label": "Campaign Assistant",
+          "href": "/campaign-assistant"
+        },
+        {
+          "label": "Landing Page Creator",
+          "href": "/landing-page-creator"
+        }
+      ]
+    },
+    {
+      "title": "company",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/about-us"
+        },
+        {
+          "label": "Careers",
+          "href": "/careers"
+        },
+        {
+          "label": "Management Team",
+          "href": "/management-team"
+        },
+        {
+          "label": "Board of Directors",
+          "href": "/board-of-directors"
+        },
+        {
+          "label": "Investor Relations",
+          "href": "/investor-relations"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us"
+        }
+      ]
+    },
+    {
+      "title": "customers",
+      "links": [
+        {
+          "label": "Customer Support",
+          "href": "/customer-support"
+        },
+        {
+          "label": "Join a Local User Group",
+          "href": "/join-local-user-group"
+        }
+      ]
+    },
+    {
+      "title": "partners",
+      "links": [
+        {
+          "label": "Partners",
+          "href": "/partners"
+        },
+        {
+          "label": "All Partner Programs",
+          "href": "/all-partner-programs"
+        },
+        {
+          "label": "Solutions Partner Program",
+          "href": "/solutions-partner-program"
+        },
+        {
+          "label": "App Partner Program",
+          "href": "/app-partner-program"
+        },
+        {
+          "label": "HubSpot for Startups",
+          "href": "/hubspot-for-startups"
+        },
+        {
+          "label": "Affiliate Program",
+          "href": "/affiliate-program"
+        }
+      ]
+    }
+  ]
+}

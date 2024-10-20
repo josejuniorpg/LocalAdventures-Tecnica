@@ -1,0 +1,27 @@
+.footer {
+    height: 852px;
+    width: 100%;
+    background: var(--mantine-color-deepBlue-10);
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: var(--mantine-color-deepBlue-1);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.linkFooter:hover {
+    text-decoration: underline;
+    color: #5ec3d3;
+}
+
+.linkFooterWithDecoration {
+    color: var(--mantine-color-deepBlue-0);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.linkFooterWithDecoration:hover {
+    color: #5ec3d3;
+}
