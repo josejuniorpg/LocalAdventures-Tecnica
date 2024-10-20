@@ -2,9 +2,9 @@ import { Box, Group, Stack, Text } from '@mantine/core';
 import { TwoCubes } from '@/src/components/utils/TwoCubesC/TwoCubes';
 import classes from './InvoiceSecction.module.css';
 
-export const InvoicesSection = () => (
+export const InvoicesSectionHeader = () => (
     <Box h={384} w="100%" bg="deepBlue.10" mb={96}>
-      <Group h="100%" align="flex-start" gap={0} w='100%'>
+      <Group h="100%" align="flex-start" gap={0} w="100%">
         <Box ml={70}>
           <TwoCubes />
         </Box>
