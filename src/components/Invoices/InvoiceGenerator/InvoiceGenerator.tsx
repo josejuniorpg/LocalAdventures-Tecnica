@@ -6,8 +6,10 @@ import { InvoiceDateFields } from 'components/Invoices/InvoiceGenerator/InvoiceD
 import { TableInvoice } from 'components/Invoices/InvoiceGenerator/TableInvoice';
 import { YourCompanyFields } from 'components/Invoices/InvoiceGenerator/YourCompanyFields';
 import useInvoiceForm from 'forms/useInvoiceForm';
-import { Box, Button, Card, Group, Stack, Table, Title } from '@mantine/core';
+import {Box, Button, Card, Group, Stack, Text, Title} from '@mantine/core';
 import classes from './InvoiceGenerator.module.css';
+import {InvoiceTotalFields} from "components/Invoices/InvoiceGenerator/InvoiceTotalFields";
+import Link from "next/link";
 
 export function InvoiceGenerator() {
   const form = useInvoiceForm();
@@ -27,7 +29,6 @@ export function InvoiceGenerator() {
             <YourCompanyFields form={form} />
             <ClientsCompanyFields form={form} />
           </Stack>
-
           <Stack align="flex-end" justify="space-between" style={{ flexGrow: 1 }}>
             <DropZoneInvoice />
             {Object.keys(form.errors).length > 0 && (
@@ -42,8 +43,12 @@ export function InvoiceGenerator() {
             <InvoiceDateFields form={form} />
           </Stack>
         </Group>
-
         <TableInvoice />
+        <InvoiceTotalFields/>
+        <Group gap={5} w={'100%'} justify={'center'}>
+          <Text>This invoice was created using the HubSpot</Text>
+          <Link href="/"><Text fw={600} c={'blue'} >Invoice Template Generator</Text></Link>
+        </Group>
 
         <Button
           color="blue"

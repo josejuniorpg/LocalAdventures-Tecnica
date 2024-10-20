@@ -174,3 +174,16 @@
     text-align: right;
     margin: 0;
 }
+
+/* Notes Box */
+.notesBox {
+    height: 130px;
+    border: 1px solid var(--mantine-color-deepBlue-9);
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
