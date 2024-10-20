@@ -20,13 +20,19 @@ export function TableInvoice() {
   const [rows, setRows] = useState<Row[]>([]);
 
   const handleAddClick = () => {
-    const newRow = [Number(numberRow), '', 1, 0.0];
+    const newRow: Row = {
+      id: Number(numberRow),
+      description: '',
+      quantity: 1,
+      price: 0.0,
+    };
+
     setRows((prevRows) => {
       return [...prevRows, newRow];
     });
+
     addNumberRow(); // Increment number for the next row.
   };
-
   const addNumberRow = () => {
     setNumberRow((prevNumberRow) => {
       const newNumber = (parseInt(prevNumberRow, 10) + 1).toString().padStart(2, '0');
