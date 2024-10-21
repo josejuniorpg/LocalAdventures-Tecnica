@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Accordion, Box, List, Text, Title } from '@mantine/core';
-import classes from './InvoiceSection.module.css';
+import classes from './Invoices.module.css';
 
 export function FAQSection() {
   return (

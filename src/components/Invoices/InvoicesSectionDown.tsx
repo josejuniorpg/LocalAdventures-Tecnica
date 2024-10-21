@@ -2,9 +2,9 @@
 
 import { Box, Button, Flex, Group, Image, Stack, Text } from '@mantine/core';
 import { FAQSection } from '@/src/components/Invoices/FAQSection';
-import { InvoiceCards } from '@/src/components/Invoices/InvoiceCards';
+import { InvoicesCards } from '@/src/components/Invoices/InvoicesCards';
 
-export function InvoiceSectionDown() {
+export function InvoicesSectionDown() {
   return (
     <>
       <Box bg="deepBlue.10" w="100%">
@@ -77,7 +77,7 @@ export function InvoiceSectionDown() {
           </Text>
         </Flex>
       </Box>
-      <InvoiceCards />
+      <InvoicesCards />
       <Flex bg="deepBlue.10" w="100%" justify="center" align="center" p={44}>
         <Button c="black" fw={500} radius="md" size="xl" color="deepBlue.0">
           Create my invoice

@@ -1,5 +1,5 @@
 import InvoiceGenerator from '@/src/components/Invoices/InvoiceGenerator';
-import { InvoiceSectionDown } from '@/src/components/Invoices/InvoiceSectionDown';
+import { InvoicesSectionDown } from '@/src/components/Invoices/InvoicesSectionDown';
 import { InvoicesSectionHeader } from '@/src/components/Invoices/InvoicesSectionHeader';
 
 export default function Invoices() {
@@ -7,7 +7,7 @@ export default function Invoices() {
     <>
       <InvoicesSectionHeader />
       <InvoiceGenerator />
-      <InvoiceSectionDown />
+      <InvoicesSectionDown />
     </>
   );
 }

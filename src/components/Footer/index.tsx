@@ -12,7 +12,7 @@ import {
 } from '@tabler/icons-react';
 import featureData from 'temp/data-footerLinks-component.json';
 import { ActionIcon, Box, Divider, Group, Image, List, Stack, Text } from '@mantine/core';
-import classes from './FooterLinks.module.css';
+import classes from './Footer.module.css';
 
 interface FeatureData {
   footerLinks: {
