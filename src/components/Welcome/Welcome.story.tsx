@@ -1,7 +1,7 @@
-import { Index } from './index';
+import { Welcome } from './index';
 
 export default {
   title: 'Welcome',
 };
 
-export const Usage = () => <Index />;
+export const Usage = () => <Welcome />;

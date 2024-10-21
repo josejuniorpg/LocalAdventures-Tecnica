@@ -24,7 +24,7 @@ interface FeatureData {
   }[];
 }
 
-export default function Index() {
+export default function Footer() {
   const data: FeatureData = featureData;
 
   return (

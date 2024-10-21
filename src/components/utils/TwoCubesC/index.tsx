@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './TwoCubes.module.css';
+import classes from './TwoCubesC.module.css';
 
-export const TwoCubes = () => (
+export const TwoCubesC = () => (
   <div className={classes.cubeContainer}>
     <div className={classes.bigCube}></div>
     <div className={classes.smallCube}>

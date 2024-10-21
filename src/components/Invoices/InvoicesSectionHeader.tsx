@@ -1,12 +1,12 @@
-import { TwoCubes } from 'components/utils/TwoCubesC/TwoCubes';
 import { Box, Group, Stack, Text } from '@mantine/core';
+import { TwoCubesC } from '@/src/components/utils/TwoCubesC';
 
 export function InvoicesSectionHeader() {
   return (
     <Box h={384} w="100%" bg="deepBlue.10" mb={96}>
       <Group h="100%" align="flex-start" gap={0} w="100%">
         <Box ml={70}>
-          <TwoCubes />
+          <TwoCubesC />
         </Box>
         <Stack w="100%" maw={950} align="center" gap={10} h="100%" justify="center">
           <Text lineClamp={3} fz="55" fw={600} c="deepBlue.0" maw={720} ta="center">
