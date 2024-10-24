@@ -7,7 +7,7 @@ import { InvoicesCards } from '@/src/components/Invoices/InvoicesCards';
 export function InvoicesSectionDown() {
   return (
     <>
-      <Box bg="deepBlue.10" w="100%">
+      <Box bg="deepBlue.10" w="100%" p={16}>
         <Stack w="100%" align="center" gap={10} h="100%" justify="center">
           <Text lineClamp={3} fz="35" fw={600} c="deepBlue.0" maw={720} pt={40} ta="center">
             How to Use HubSpot&#39;s Free Online Invoice Generator

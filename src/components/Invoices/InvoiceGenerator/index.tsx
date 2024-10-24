@@ -63,15 +63,7 @@ export default function InvoiceGenerator() {
           </Link>
         </Group>
         {/* Todo: Improve the usage of absolute */}
-        <Stack
-          align={'flex-end'}
-          style={{
-            zIndex: 100,
-            position: 'absolute',
-            right: '0px',
-            bottom: '-74px',
-          }}
-        >
+        <Stack align={'flex-end'} className={classes.invoiceGeneratorCTAs}>
           {Object.keys(form.errors).length > 0 && (
             <Box className={classes.boxError} w={'180'} mr={60}>
               <Text className={classes.listError}> Please fill out the required fields </Text>

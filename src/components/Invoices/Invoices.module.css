@@ -7,6 +7,25 @@
     transition: border-color 0.3s ease;
 }
 
+.invoiceSectionHeader {
+    height: 384px;
+    width: 100%;
+    margin-bottom: 96px;
+}
+
+.invoiceContainer{
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+}
+
+
+.invoicesCards{
+    height: 458px;
+}
+
 .invoiceQAccordionTitle {
     transition: color 0.3s ease;
 }
@@ -26,5 +45,25 @@
 
 .invoiceQAccordion[data-active="true"] {
     border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+    .invoiceContainer {
+        justify-content: flex-start;
+        height: fit-content;
+        padding: 20px;
+
+    }
+
+    .invoiceSectionHeader {
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 96px;
+    }
+
+    .invoicesCards{
+        height: fit-content;
+        padding: 16px;
+    }
 }
 

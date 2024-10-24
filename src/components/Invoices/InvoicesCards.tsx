@@ -1,9 +1,10 @@
 import invoiceCardData from 'temp/data-InvoiceCards-component.json'; // Asegúrate de que la ruta es correcta
 import { Card, Group, Image, Stack, Text } from '@mantine/core';
+import classes from './Invoices.module.css'
 
 export function InvoicesCards() {
   return (
-    <Group justify="center" h={458}>
+    <Group className={classes.invoicesCards} justify="center">
       {invoiceCardData.invoiceCards.map((card, index) => (
         <Card key={index} h={380} w={249} p={0}>
           <Card.Section>

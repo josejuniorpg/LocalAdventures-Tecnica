@@ -4,12 +4,15 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { IconGlobe, IconMessages, IconSearch, IconUser } from '@tabler/icons-react';
 import Cookies from 'js-cookie';
-import { Button, Group, Switch } from '@mantine/core';
+import { Burger, Button, Group, Switch } from '@mantine/core';
 import CustomLink from '@/src/components/Navbar/CustomLink';
 import classes from './Navbar.module.css';
+import {useDisclosure} from "@mantine/hooks";
 
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [opened, { toggle }] = useDisclosure(false);
+
   useEffect(() => {
     const userCookie = Cookies.get('authToken');
     if (userCookie) {
@@ -24,24 +27,24 @@ export default function Navbar() {
           <Group justify="space-between" h="100%" w="100%">
             <Group h="100%" gap={32} visibleFrom="sm">
               <CustomLink
-                icon={<IconGlobe width="18px" height="18px" />}
-                text="English"
+                icon={<IconGlobe width={'18px'} height={'18px'} />}
+                text={'English'}
                 isSecondary
                 showDropdown
               />
               <CustomLink
                 icon={<Switch style={{ marginRight: '2px' }} />}
-                text="High Contrast"
+                text={'High Contrast'}
                 isSecondary
               />
               <CustomLink
-                icon={<IconMessages width="18px" height="18px" />}
-                text="Customer Support"
+                icon={<IconMessages width={'18px'} height={'18px'} />}
+                text={'Customer Support'}
                 isSecondary
               />
               <CustomLink
-                icon={<IconUser width="18px" height="18px" />}
-                text="Contact Sales"
+                icon={<IconUser width={'18px'} height={'18px'} />}
+                text={'Contact Sales'}
                 isSecondary
               />
             </Group>
@@ -63,7 +66,7 @@ export default function Navbar() {
           <Group>
             <Image
               priority
-              src="/logo.svg"
+              src={'/logo.svg'}
               height={32}
               width={120}
               alt="Logo"
@@ -71,10 +74,10 @@ export default function Navbar() {
             />
 
             <Group h="100%" gap={32} visibleFrom="sm">
-              <CustomLink text="Products" showDropdown />
-              <CustomLink text="Solutions" showDropdown />
-              <CustomLink text="Pricing" />
-              <CustomLink text="Resources" showDropdown />
+              <CustomLink text={'Products'} showDropdown />
+              <CustomLink text={'Solutions'} showDropdown />
+              <CustomLink text={'Pricing'} />
+              <CustomLink text={'Resources'} showDropdown />
             </Group>
           </Group>
 
@@ -83,6 +86,7 @@ export default function Navbar() {
               <Button color="rgb(224, 72, 38)">Start free or get a demo</Button>
             </Group>
           </div>
+          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
         </Group>
       </nav>
     </>

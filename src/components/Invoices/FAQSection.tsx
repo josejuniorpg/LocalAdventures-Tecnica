@@ -82,7 +82,7 @@ export function FAQSection() {
           </Accordion.Item>
         ))}
       </Accordion>
-      <Text pt={20} c="deepBlue.9" fz={13} mt={50}>
+      <Text pt={20} c="deepBlue.9" fz={13} mt={50} p={16}>
         Disclaimer: These FAQs include some information on legal issues surrounding invoicing, but
         legal information is not the same as legal advice -- applying the law to a specific
         circumstance. We’ve conducted research to better ensure that our information is accurate and

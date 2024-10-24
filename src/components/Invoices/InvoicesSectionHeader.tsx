@@ -1,10 +1,11 @@
 import { Box, Group, Stack, Text } from '@mantine/core';
 import { TwoCubesC } from '@/src/components/utils/TwoCubesC';
+import classes from './Invoices.module.css';
 
 export function InvoicesSectionHeader() {
   return (
-    <Box h={384} w="100%" bg="deepBlue.10" mb={96}>
-      <Group h="100%" align="flex-start" gap={0} w="100%">
+    <Box className={classes.invoiceSectionHeader} bg="deepBlue.10">
+      <Group className={classes.invoiceContainer}>
         <Box ml={70}>
           <TwoCubesC />
         </Box>
