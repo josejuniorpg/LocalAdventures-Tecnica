@@ -14,7 +14,15 @@ export function FAQSection() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:8000/api/invoices/FAQ');
+      const response = await fetch(
+        'https://someting-anzudes.pythonanywhere.com/api/invoices/FAQ/',
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
       if (!response.ok) {
         throw new Error('Error fetching the faqDetailsData');
       }
@@ -23,7 +31,7 @@ export function FAQSection() {
     };
 
     fetchData().catch((error) => {
-      console.error(error); // Manejo simple de errores
+      console.error(error);
       throw error;
     });
   }, []);
