@@ -6,15 +6,22 @@ import { Box, Group, rem } from '@mantine/core';
 import classes from '@/src/components/Navbar/Navbar.module.css';
 
 type CustomLinkProps = {
+  href?: string; // Agregar la propiedad href
   icon?: ReactElement;
   text: string;
   showDropdown?: boolean;
   isSecondary?: boolean;
 };
 
-export default function CustomLink({ icon, text, showDropdown, isSecondary }: CustomLinkProps) {
+export default function CustomLink({
+  href,
+  icon,
+  text,
+  showDropdown,
+  isSecondary,
+}: CustomLinkProps) {
   return (
-    <a href="#" className={`${classes.link} ${isSecondary && classes.secondaryLink}`}>
+    <a href={href} className={`${classes.link} ${isSecondary && classes.secondaryLink}`}>
       <Group gap={1}>
         {icon}
         <Box component="span" mr={5}>

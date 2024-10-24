@@ -42,12 +42,10 @@ export function Login() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log('Login successful:', data);
         setError('');
 
-        Cookies.set('authToken', data.token, { expires: 7 }); // La cookie expira en 7 días
-
-        window.location.href = '/'; // Cambia esto a la ruta deseada
+        Cookies.set('authToken', data.token, { expires: 7 });
+        window.location.href = '/';
       } else {
         const errorData = await response.json();
         setError(errorData.detail || 'Login failed. Please try again.');
